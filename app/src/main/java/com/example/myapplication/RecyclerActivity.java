@@ -1,3 +1,4 @@
+// Frederick Sharkevich
 package com.example.myapplication;
 
 import android.app.ProgressDialog;
