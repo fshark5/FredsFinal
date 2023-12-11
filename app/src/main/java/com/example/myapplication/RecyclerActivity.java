@@ -21,7 +21,7 @@ public class RecyclerActivity extends AppCompatActivity {
 
     private HomeAdapter adapter;
     private RecyclerView homeList;
-    private String apiKey = "cfc28f84b9mshf414f934dc9b9f4p15016ajsn4414cdc0892a";
+    private String apiKey = "24ff877e2bmsh7b0f3c8f0ab0a3fp1f6e79jsn2cdf5edd3f04";
     ProgressDialog progressDialog;
     public String location;
 
@@ -51,6 +51,7 @@ public class RecyclerActivity extends AppCompatActivity {
                     ApiResponse apiResponse = response.body();
 
                     if (apiResponse.getResults() != null) {
+                        progressDoalog.dismiss();
                         generateDataList(apiResponse.getResults());
                     } else {
                         Log.e("Error", "Response results are null");
